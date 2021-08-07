@@ -1,0 +1,79 @@
+body {
+    line-height: 1.6;
+    max-width: 900px;
+    margin: auto auto;
+    display: grid;
+    grid-template-areas: "header header  header header" "nav nav nav nav" "main main main sidebar  " "footer footer footer  footer ";
+    grid-template-rows: 10em 3em auto 10em;
+    grid-auto-columns: 1fr 5fr auto 2fr;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(183, 189, 189);
+    color: yellow;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+nav {
+    grid-area: nav;
+    background-color: violet;
+}
+
+.li-nav {
+    display: inline;
+    list-style-type: none;
+    padding: 10px;
+    color: white;
+    font-size: large;
+}
+
+.main-content {
+    grid-area: main;
+    background-color: yellow;
+}
+
+.main-title {
+    padding-left: 25px;
+    color: rgb(98, 5, 219);
+}
+
+.articles {
+    padding: 15px;
+    background-color: rgb(250, 210, 33);
+    display: flex;
+}
+
+.article1 {
+    border-left: 0cm;
+    border-top: 0cm;
+    border-bottom: 0cm;
+    border-right: 1px;
+    border-style: solid;
+    padding: 15px;
+    grid-area: article1;
+    display: flex;
+    flex-direction: column;
+}
+
+.article2 {
+    padding: 15px;
+    grid-area: article2;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: tomato;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(183, 189, 189);
+    color: yellow;
+    display: flex;
+}
